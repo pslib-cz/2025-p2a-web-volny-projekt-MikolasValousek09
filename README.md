@@ -35,9 +35,9 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 
 | Výstup | Odkaz |
 |---|---|
-| GitHub Pages (live) | [`Doplň odkaz`](#) |
+| GitHub Pages (live) | [`https://github.com/pslib-cz/2025-p2a-web-volny-projekt-MikolasValousek09/actions/runs/24797499116`](#) |
 | Grafický manuál (Figma / Canva) | [`Doplň odkaz`](#) |
-| Grafický návrh webu (Figma) | [`Doplň odkaz`](#) |
+| Grafický návrh webu (Figma) | [`https://www.figma.com/design/oYajTCnO89ucQnrk8JicdJ/WEB-Project?node-id=0-1&t=jd4dgS7QlIENOU3H-1`](#) |
 | Fotografie / média | [`Doplň odkaz`](#) |
 
 ---
@@ -46,4 +46,4 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 
 _Prostor pro vlastní poznámky, zpětnou vazbu, TODO apod._
 
-`Volný prostor pro poznámky.`
+`.`
