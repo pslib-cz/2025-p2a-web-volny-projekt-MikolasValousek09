@@ -1,0 +1,139 @@
+
+
+
+
+
+/* Mobile */
+
+@media (min-width: 360px) {
+
+
+    .logo {
+        font-family: Mervale Script;
+    }
+
+
+    .homepage {
+        background-color: var(--ping);
+        width: auto;
+        height: 240px;
+        gap: 0px;
+        display: grid;
+        padding-left: 20px;
+        grid-template-columns: 40% 60%;
+        
+    }
+
+
+    .homepage-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around ;
+        margin: 0;
+        height: 240px;
+    }
+
+
+    .btn {
+        border-radius: 5px;
+        background-color: var(--brown);
+        text-decoration: none;
+        color: var(--lighter-ping);
+        padding: 0.75em;
+        flex-grow:0;
+
+    }
+
+
+    .homepage-pic {
+        right: 0;
+        bottom: 0;
+    }
+
+
+    .banner-info {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+
+    }
+
+
+    .banner-pic {
+        background-color: var(--lighter-ping);
+        border:2em;
+        color: var(--ping);
+    }
+
+
+    .banner-card {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .cake-cards-h {
+        display: flex;
+        gap:8px ;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5em;
+    }
+
+
+    .cake-cards {
+        background-color: var(--cream);
+        padding-top: 1.5em;
+    }
+
+
+
+    .cake-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .cake-card-text{
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

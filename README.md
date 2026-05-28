@@ -2,7 +2,7 @@
 
 > **Jméno a příjmení:** `Mikoláš Valoušek`
 
-> **Název projektu:** `Lahůdky u Mikeše`
+> **Název projektu:** `Mikešovy lahůdky`
 
 ---
 
@@ -37,7 +37,7 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 |---|---|
 | GitHub Pages (live) | [`https://github.com/pslib-cz/2025-p2a-web-volny-projekt-MikolasValousek09/actions/runs/24797499116`](#) |
 | Grafický manuál (Figma / Canva) | [`Doplň odkaz`](#) |
-| Grafický návrh webu (Figma) | [`https://www.figma.com/design/oYajTCnO89ucQnrk8JicdJ/WEB-Project?node-id=0-1&t=jd4dgS7QlIENOU3H-1`](#) |
+| Grafický návrh webu (Figma) | [`https://www.figma.com/design/VjdgeVXpEupt9CDPTIzIHb/Valou%C5%A1ekMikol%C3%A1%C5%A1?node-id=0-1&p=f&t=YAr9nLfoxHEWOW7i-0`](#) |
 | Fotografie / média | [`Doplň odkaz`](#) |
 
 ---
