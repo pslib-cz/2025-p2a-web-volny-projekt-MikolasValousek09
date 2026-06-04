@@ -1,139 +1,335 @@
-
-
-
-
-
 /* Mobile */
 
-@media (min-width: 360px) {
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-grow: 1;
+    border: none;
+    margin: none;
+    margin: 0;
+}
 
 
-    .logo {
-        font-family: Mervale Script;
-    }
+.homepage {
+    background-color: var(--ping);
+    height: 250px;
+    gap: 0px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-left: 1em;
+}
 
 
-    .homepage {
-        background-color: var(--ping);
-        width: auto;
-        height: 240px;
-        gap: 0px;
-        display: grid;
-        padding-left: 20px;
-        grid-template-columns: 40% 60%;
-        
-    }
+.homepage-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 250px;
+}
 
 
-    .homepage-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around ;
-        margin: 0;
-        height: 240px;
-    }
+.btn-explore {
+    border-radius: 5px;
+    background-color: var(--brown);
+    text-decoration: none;
+    color: var(--lighter-ping);
+    padding: 0.75em;
+    width: 130px;
+    text-align: center;
+}
 
 
-    .btn {
-        border-radius: 5px;
-        background-color: var(--brown);
-        text-decoration: none;
-        color: var(--lighter-ping);
-        padding: 0.75em;
-        flex-grow:0;
-
-    }
+.homepage-pic {
+    justify-self: end;
+    align-self: baseline;
+}
 
 
-    .homepage-pic {
-        right: 0;
-        bottom: 0;
-    }
+.banner-info {
+    display: flex;
+    margin-left: 1em;
+    margin-right: 1em;
+    justify-content: space-around;
+}
 
 
-    .banner-info {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-
-    }
+.banner-pic {
+    background-color: var(--lighter-ping);
+    border: 2em;
+    color: var(--ping);
+}
 
 
-    .banner-pic {
-        background-color: var(--lighter-ping);
-        border:2em;
-        color: var(--ping);
-    }
+.banner-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
 
 
-    .banner-card {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.cake-cards-h {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
 
 
-    .cake-cards-h {
-        display: flex;
-        gap:8px ;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 1.5em;
-    }
+.cake-img {
+    border-radius: 5px;
+}
 
 
-    .cake-cards {
-        background-color: var(--cream);
-        padding-top: 1.5em;
-    }
+.cake-cards {
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5em;
+}
+
+
+.cake-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+
+.cake-card-left {
+    display: flex;
+    gap: 1em;
+}
+
+
+.cake- {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.cake-rating {
+    display: flex;
+
+}
+
+
+.cake-card-btn {
+    width: auto;
+    height: auto;
+    /* appearance: none; */
+    background-color: transparent;
+    border: none;
+}
+
+
+.cake-card-description {
+    flex-direction: column;
+}
+
+
+.swipe-h {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.swiper-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.text-a {
+    padding-top: 1.5em;
+    align-self: center;
+    /* margin-top: 1.5em; */
+}
+
+
+.slider-img {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ping);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+
+.form {
+    align-self: center;
+    width: auto;
+}
+
+
+.placehold-email {
+    height: 2em;
+    border-radius: 5px;
+    border-width: 0;
+}
+
+
+.btn-log {
+    background-color: var(--brown);
+    height: 2em;
+    width: 80px;
+    border-radius: 5px;
+    border-width: 0;
+}
 
 
 
-    .cake-card {
-        display: flex;
-        flex-direction: row;
-    }
 
 
-    .cake-card-text{
-    }
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--brown);
+    padding: 1em;
+}
+
+
+.footer-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer-ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.footer-a {
+    text-decoration: none;
+}
+
+
+.footer-left {
+    display: grid;
+    justify-content: center;
+    gap: 0;
+}
+
+
+.footer-right {
+    justify-self: center;
+    padding-left: 0;
+}
+
+
+.footet-logo {}
+
+
+.swiper {
+    width: 180px;
+    height: 180px;
+}
+
+
+.swiper-slide-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.swiper-button-prev {}
+
+
+.swiper-button-next {}
 
 
 
 
 
+/* desktop */
 
 
 
+/* 2. stránka */
+
+.header-h {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    background-color: var(--ping);
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
 
 
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    padding: 20px;
+}
 
 
+.product-img {
+    border-radius: 5px;
+    aspect-ratio: 1;
+    height: auto;
+}
 
 
+.cake-card-add {
+    display: flex;
+
+    justify-content: space-between;
+}
 
 
+.product-content-btn {
+    width: auto;
+    height: auto;
+    /* appearance: none; */
+    background-color: transparent;
+    border: none;
+}
 
 
+.product-card {
+    width: 100%;
+    background-color: var(--cream);
+    border-radius: 5px;
+
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cake-card-text {
+    padding-left: 1em;
+    padding-bottom: 0.5em;
 }

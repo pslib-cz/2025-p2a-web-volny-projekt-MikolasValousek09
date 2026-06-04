@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,13 @@
     <link rel="stylesheet" href="Styles/main.css">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/mervale-script" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/mervale-script" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
 </head>
 
 <body>
@@ -29,13 +34,13 @@
                 <p class="text-l text-medium text-light-ping">Dorty, které potěší každého</p>
 
                 <p class="text-m text-regular text-light-ping">
-                    Každý dort  pečeme s láskou z těch nejlepších surovin. Dopřejte si okamžik sladkého potěšení.
+                    Každý dort pečeme s láskou z těch nejlepších surovin. Dopřejte si okamžik sladkého potěšení.
                 </p>
-            
-                <a href="#" class="btn text-l text-light-ping">Objevte dorty</a>
-            
+
+                <a href="seznam.html" class=" btn-explore text-l text-light-ping">Objevte dorty</a>
+
             </div>
-            
+
             <img src="/Images/Homepage cake.png" alt="Jahodový dort" width="250" height="250" class="homepage-pic">
         </section>
 
@@ -71,7 +76,7 @@
 
     </section>
 
-    
+
 
 
     <section class="cake-cards">
@@ -80,125 +85,182 @@
             <p class="text-grey-font text-s text-regular">Nejprodávanější produkty</p>
         </div>
 
-        <article class="cake-card">
-            <img src="/Images/Cake_chocolate.jpg" alt="Čokoládový dort" height="70" width="70">
+        <article>
+            <a href="dort-coko" class="cake-card">
+                <div class="cake-card-left">
+                    <img src="/Images/Cake_chocolate.jpg" alt="Čokoládový dort" height="70" width="70" class="cake-img">
 
-            <div cake-card-text>
-                <p class="text-brown text-semibold text-m">Čokoládový dort</p>
-                <p class="">*****</p>
-                <p class="text-brown text-regular text-m">od 899 Kč</p>
-            </div>
-
-            <button>+</button>
+                    <div class="cake-card-text">
+                        <p class="text-brown text-semibold text-m">Čokoládový dort</p>
+                        <div class="cake-rating">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        </div>
+                        <p class="text-brown text-regular text-m">od 1099 Kč</p>
+                    </div>
+                </div>
+                <button class="cake-card-btn"><img src="Icons/plus_button.svg" alt="add" height=40></button>
+            </a>
         </article>
 
-        <article class="cake-card">
-            <img src="/Images/Cake_wedding.jpg" alt="Svatební dort" height="70" width="70">
 
-            <div>
-                <p class="text-brown text-semibold text-m">Svatební dort</h3>
-                <p>*****</p>
-                <p class="text-brown text-regular text-m">od 2 899 Kč</p>
-            </div>
+        <article>
+            <a href="cake-wedding" class="cake-card">
+                <div class="cake-card-left">
+                    <img src="/Images/Cake_wedding.jpg" alt="Svatební dort" height="70" width="70" class="cake-img">
 
-            <button>+</button>
+                    <div class="cake-card-text">
+                        <p class="text-brown text-semibold text-m">Svatební dort</h3>
+                        <div class="cake-rating">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        </div>
+                        <p class="text-brown text-regular text-m">od 2 899 Kč</p>
+                    </div>
+                </div>
+
+                <button class="cake-card-btn"><img src="Icons/plus_button.svg" alt="add" height=40></button>
+            </a>
         </article>
 
-        <article class="cake-card">
-            <img src="/Images/Cake_fruit.jpg" alt="Ovocný dort" height="70" width="70">
 
-            <div>
-                <p class="text-brown text-semibold text-m">Jahodový dort</p>
-                <p>*****</p>
-                <p class="text-brown text-regular text-m">od 799 Kč</p>
-            </div>
+        <article>
+            <a href="cake-fruit" class="cake-card">
+                <div class="cake-card-left">
+                    <img src="/Images/Cake_fruit.jpg" alt="Ovocný dort" height="70" width="70" class="cake-img">
 
-            <button>+</button>
+                    <div class="cake-card-text">
+                        <p class="text-brown text-semibold text-m">Jahodový dort</p>
+                        <div class="cake-rating">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        </div>
+                        <p class="text-brown text-regular text-m">od 799 Kč</p>
+                    </div>
+                </div>
+
+                <button class="cake-card-btn"><img src="Icons/plus_button.svg" alt="add" height=40></button>
+            </a>
         </article>
 
-        <article class="cake-card">
-            <img src="/Images/Cake_custom.jpg" alt="Vlastní dort" height="70" width="70">
 
-            <div>
-                <p class="text-brown text-semibold text-m">Vlastní dort</p>
-                <p>*****</p>
-                <p class="text-brown text-regular text-m">od 1 499 Kč</p>
-            </div>
+        <article>
+            <a href="cake-custom" class="cake-card">
+                <div class="cake-card-left">
+                    <img src="/Images/Cake_custom.jpg" alt="Vlastní dort" height="70" width="70" class="cake-img">
 
-            <button></button>
+                    <div class="cake-card-text">
+                        <p class="text-brown text-semibold text-m">Vlastní dort</p>
+                        <div class="cake-rating">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                            <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        </div>
+                        <p class="text-brown text-regular text-m">od 1 499 Kč</p>
+                    </div>
+                </div>
+
+                <button class="cake-card-btn"><img src="Icons/plus_button.svg" alt="add" height=40></button>
+            </a>
         </article>
 
-        <a href="#">Zobrazit všechny produkty</a>
+
+        <a href="seznam.html" class=" text-a text-ping text-bold text-m">Zobrazit všechny produkty</a>
 
     </section>
 
+
+
     <!-- pridat swiper? -->
-    <!-- <section>
+    <section class="swiper-section">
 
-        <h2>Inspirace</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="Images/Cake_slider.jpg" alt="" width="100%" height="100%"
+                        class="swiper-slide-img"></div>
+                <div class="swiper-slide"><img src="Images/Cake_slider2.jpg" alt="" width="100%" height="100%"
+                        class="swiper-slide-img"></div>
+                <div class="swiper-slide"><img src="Images/Cake_custom.jpg" alt="" width="100%" height="100%"
+                        class="swiper-slide-img"></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-        <button></button>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-        <img src="inspirace/dort1.jpg" alt="Dort 1" width="120">
-        <img src="inspirace/dort2.jpg" alt="Dort 2" width="120">
-        <img src="inspirace/dort3.jpg" alt="Dort 3" width="120">
-
-        <button></button>
-
-    </section> -->
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
 
 
 
 
-    <section>
+        <a href="instagram" class="text-a text-ping text-bold text-m">Sledovat na Instagramu</a>
 
-        <h2>Buďte v obraze</h2>
+    </section>
 
-        <p>
-            Přihlaste se k odběru novinek a získejte
-            informace o akcích a nových produktech.
+
+
+
+    <section class="login">
+
+        <p class="text-l text-light-ping text-semibold">Buďte v obraze</h>
+
+        <p class=" text-s text-light-ping text-regular">
+            Přihlaste se k odběru novinek a získáte
+            slevu 10 % na první objednávku.
         </p>
 
-        <form>
-            <input type="email" placeholder="Váš e-mail">
-            <button type="submit">Přihlásit se</button>
+        <form class="form">
+            <input type="email" placeholder="Váš e-mail" class="placehold-email text-grey-font text-s text-regular">
+            <button type="submit" class="text-m text-light-ping text-medium btn-log">Přihlásit se</button>
         </form>
 
     </section>
 
-    <footer>
+    <footer class="footer">
 
-        <p>Logo</p>
+        <div class="footer-left">
+            <a href="index.html"><img src="Images/darklogo.png" alt="logo" width="140px" class="footer-logo"></a>
 
-        <div>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">TikTok</a>
+            <div class="footer-icons">
+                <a href="#"><img src="Icons/facebook-svgrepo-com.svg" alt="facebook" height="25"></a>
+                <a href="#"><img src="Icons/Gallery.svg" alt="galerie" height="25"></a>
+                <a href="#"><img src="Icons/tiktok.svg" alt="tiktok" height="25"></a>
+                <a href=""><img src="Icons/instagram-svgrepo-com.svg" alt="instagram" height="25"></a>
+            </div>
         </div>
 
-        <ul>
-            <li><a href="#">Informace</a></li>
-            <li><a href="#">Zákaznický servis</a></li>
-            <li><a href="#">Kontakty</a></li>
+        <ul class="footer-right">
+            <li class="footer-ul"><a href="#" class="footer-a text-s text-light-ping text-light">Informace</a></li>
+            <li class="footer-ul"><a href="#" class="footer-a text-s text-light-ping text-light">Zákaznický servis</a>
+            </li>
+            <li class="footer-ul"><a href="#" class="footer-a text-s text-light-ping text-light">Kontakty</a></li>
         </ul>
 
     </footer>
 
-    <nav>
 
-        <a href="#">
-            <img src="" alt="" width="25">
-            <p>Domů</p>
-        </a>
 
-        <a href="#">
-            <img src="" alt="" width="25">
-            <p>Košík</p>
-        </a>
 
-    
 
-    </nav>
 
 </body>
+
 </html>
