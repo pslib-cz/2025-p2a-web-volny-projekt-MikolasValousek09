@@ -16,10 +16,28 @@
 <body>
 
     <header>
-        <a href="index.html"><img src="/Images/logo.png" alt="LOGO" width="140px"></a>
+        <div class="header-top">
+
+            <a href="index.html"><img src="Images/logo.png" alt="LOGO" width="140"></a>
+
+            <nav class="nav-menu">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+                <label for="nav-toggle" class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="text-brown text-regular text-m">Domů</a></li>
+                    <li><a href="seznam.html" class="text-brown text-regular text-m">Produkty</a></li>
+                    <li><a href="order.html" class="text-brown text-regular text-m">Košík</a></li>
+                </ul>
+            </nav>
+
+        </div>
 
         <section class="header-h">
-            <p class="text-l text-regular text-light-ping">Naše dobroty</p>
+            <p class="text-xl text-regular text-light-ping">Naše dobroty</p>
             <p class="text-s text-regular text-light-ping">Oblíbené dorty a zákusky</p>
         </section>
 
@@ -29,216 +47,186 @@
     <main class="product-grid">
 
         <article class="product-card">
-            <a href="/cake-choco.html" class="product-card-a">
+            <a href="cake-choco.html" class="product-card-a">
                 <div class="product-image">
                     <img src="Images/Cake_chocolate.jpg" alt="Čokoládový dort" height="280" width="280" class="product-img">
                 </div>
-
-                <div class="product-content">
-                    <div class="cake-card-add">
-                        <div class="cake-card-text">
-                            <p class="text-brown text-semibold text-m">Čokoládový dort</p>
-                            <div class="cake-rating">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                            </div>
-                            <p class="text-brown text-regular text-m">od 1099 Kč</p>
-                        </div>
-
-                        <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
-                    </div>
-                </div>
             </a>
+            <div class="cake-card-add">
+                <a href="cake-choco.html" class="product-card-a cake-card-text">
+                    <p class="text-brown text-semibold text-m">Čokoládový dort</p>
+                    <div class="cake-rating">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                    </div>
+                    <p class="text-brown text-regular text-m">od 1099 Kč</p>
+                </a>
+                <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
+            </div>
         </article>
 
 
         <article class="product-card">
-            <a href="" class="product-card-a">
+            <a href="cake-choco.html" class="product-card-a">
                 <div class="product-image">
                     <img src="Images/Cake_wedding.jpg" alt="Svatební dort" height="280" width="280" class="product-img">
                 </div>
-                <div class="product-content">
-                    <div class="cake-card-add">
-                        <div class="cake-card-text">
-                            <p class="text-brown text-semibold text-m">Svatební dort</h3>
-                            <div class="cake-rating">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                            </div>
-                            <p class="text-brown text-regular text-m">od 2 899 Kč</p>
-                        </div>
-
-                        <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
-                    </div>
-                </div>
             </a>
+            <div class="cake-card-add">
+                <a href="cake-choco.html" class="product-card-a cake-card-text">
+                    <p class="text-brown text-semibold text-m">Svatební dort</p>
+                    <div class="cake-rating">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                    </div>
+                    <p class="text-brown text-regular text-m">od 2 899 Kč</p>
+                </a>
+                <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
+            </div>
         </article>
 
 
         <article class="product-card">
-            <a href="" class="product-card-a">
+            <a href="cake-choco.html" class="product-card-a">
                 <div class="product-image">
                     <img src="Images/Cake_fruit.jpg" alt="Ovocný dort" height="280" width="280" class="product-img">
                 </div>
-                <div class="product-content">
-                    <div class="cake-card-add">
-
-                        <div class="cake-card-text">
-                            <p class="text-brown text-semibold text-m">Jahodový dort</p>
-                            <div class="cake-rating">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                            </div>
-                            <p class="text-brown text-regular text-m">od 799 Kč</p>
-                        </div>
-
-                        <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
-                    </div>
-                </div>
             </a>
+            <div class="cake-card-add">
+                <a href="cake-choco.html" class="product-card-a cake-card-text">
+                    <p class="text-brown text-semibold text-m">Jahodový dort</p>
+                    <div class="cake-rating">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                    </div>
+                    <p class="text-brown text-regular text-m">od 799 Kč</p>
+                </a>
+                <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
+            </div>
         </article>
 
 
         <article class="product-card">
-            <a href="" class="product-card-a">
+            <a href="cake-choco.html" class="product-card-a">
                 <div class="product-image">
                     <img src="Images/Cake_custom.jpg" alt="Vlastní dort" height="280" width="280" class="product-img">
                 </div>
-                <div class="product-content">
-                    <div class="cake-card-add">
-
-                        <div class="cake-card-text">
-                            <p class="text-brown text-semibold text-m">Vlastní dort</p>
-                            <div class="cake-rating">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                            </div>
-                            <p class="text-brown text-regular text-m">od 1 499 Kč</p>
-                        </div>
-
-                        <button class="product-content-btn"><img src="Icons/plus_circle.svg" alt=""></button>
-                    </div>
-                </div>
             </a>
+            <div class="cake-card-add">
+                <a href="cake-choco.html" class="product-card-a cake-card-text">
+                    <p class="text-brown text-semibold text-m">Vlastní dort</p>
+                    <div class="cake-rating">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                    </div>
+                    <p class="text-brown text-regular text-m">od 1 499 Kč</p>
+                </a>
+                <button class="product-content-btn"><img src="Icons/plus_circle.svg" alt=""></button>
+            </div>
         </article>
 
 
 
         <article class="product-card">
-            <a href="" class="product-card-a">
+            <a href="cake-choco.html" class="product-card-a">
                 <div class="product-image">
                     <img src="Images/Cake_chocolate.jpg" alt="Čokoládový dort" height="280" width="280"
                         class="product-img">
                 </div>
-
-                <div class="product-content">
-                    <div class="cake-card-add">
-                        <div class="cake-card-text">
-                            <p class="text-brown text-semibold text-m">Čokoládový dort</p>
-                            <div class="cake-rating">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                            </div>
-                            <p class="text-brown text-regular text-m">od 1099 Kč</p>
-                        </div>
-
-                        <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
-                    </div>
-                </div>
             </a>
+            <div class="cake-card-add">
+                <a href="cake-choco.html" class="product-card-a cake-card-text">
+                    <p class="text-brown text-semibold text-m">Čokoládový dort</p>
+                    <div class="cake-rating">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                    </div>
+                    <p class="text-brown text-regular text-m">od 1099 Kč</p>
+                </a>
+                <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
+            </div>
         </article>
 
 
         <article class="product-card">
-            <a href="" class="product-card-a">
+            <a href="cake-choco.html" class="product-card-a">
                 <div class="product-image">
                     <img src="Images/Cake_wedding.jpg" alt="Svatební dort" height="280" width="280" class="product-img">
                 </div>
-                <div class="product-content">
-                    <div class="cake-card-add">
-                        <div class="cake-card-text">
-                            <p class="text-brown text-semibold text-m">Svatební dort</h3>
-                            <div class="cake-rating">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                            </div>
-                            <p class="text-brown text-regular text-m">od 2 899 Kč</p>
-                        </div>
-
-                        <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
-                    </div>
-                </div>
             </a>
+            <div class="cake-card-add">
+                <a href="cake-choco.html" class="product-card-a cake-card-text">
+                    <p class="text-brown text-semibold text-m">Svatební dort</p>
+                    <div class="cake-rating">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                    </div>
+                    <p class="text-brown text-regular text-m">od 2 899 Kč</p>
+                </a>
+                <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
+            </div>
         </article>
 
 
         <article class="product-card">
-            <a href="" class="product-card-a">
+            <a href="cake-choco.html" class="product-card-a">
                 <div class="product-image">
                     <img src="Images/Cake_fruit.jpg" alt="Ovocný dort" height="280" width="280" class="product-img">
                 </div>
-                <div class="product-content">
-                    <div class="cake-card-add">
-
-                        <div class="cake-card-text">
-                            <p class="text-brown text-semibold text-m">Jahodový dort</p>
-                            <div class="cake-rating">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                            </div>
-                            <p class="text-brown text-regular text-m">od 799 Kč</p>
-                        </div>
-
-                        <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
-                    </div>
-                </div>
             </a>
+            <div class="cake-card-add">
+                <a href="cake-choco.html" class="product-card-a cake-card-text">
+                    <p class="text-brown text-semibold text-m">Jahodový dort</p>
+                    <div class="cake-rating">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                    </div>
+                    <p class="text-brown text-regular text-m">od 799 Kč</p>
+                </a>
+                <button class="cake-card-btn"><img src="Icons/plus_circle.svg" alt=""></button>
+            </div>
         </article>
 
 
         <article class="product-card">
-            <a href="" class="product-card-a">
+            <a href="cake-choco.html" class="product-card-a">
                 <div class="product-image">
                     <img src="Images/Cake_custom.jpg" alt="Vlastní dort" height="280" width="280" class="product-img">
                 </div>
-                <div class="product-content">
-                    <div class="cake-card-add">
-
-                        <div class="cake-card-text">
-                            <p class="text-brown text-semibold text-m">Vlastní dort</p>
-                            <div class="cake-rating">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                                <img src="Icons/Rating_star.png" alt="rating" height="16">
-                            </div>
-                            <p class="text-brown text-regular text-m">od 1 499 Kč</p>
-                        </div>
-
-                        <button class="product-content-btn"><img src="Icons/plus_circle.svg" alt=""></button>
-                    </div>
-                </div>
             </a>
+            <div class="cake-card-add">
+                <a href="cake-choco.html" class="product-card-a cake-card-text">
+                    <p class="text-brown text-semibold text-m">Vlastní dort</p>
+                    <div class="cake-rating">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                        <img src="Icons/Rating_star.png" alt="rating" height="16">
+                    </div>
+                    <p class="text-brown text-regular text-m">od 1 499 Kč</p>
+                </a>
+                <button class="product-content-btn"><img src="Icons/plus_circle.svg" alt=""></button>
+            </div>
         </article>
 
 
@@ -248,13 +236,13 @@
     <footer class="footer">
 
         <div class="footer-left">
-            <a href="index.html"><img src="Images/darklogo.png" alt="logo" width="280px" class="footer-logo"></a>
+            <a href="index.html"><img src="Images/darklogo.png" alt="logo" width="280" class="footer-logo"></a>
 
             <div class="footer-icons">
                 <a href="#"><img src="Icons/facebook-svgrepo-com.svg" alt="facebook" height="25"></a>
                 <a href="#"><img src="Icons/Gallery.svg" alt="galerie" height="25"></a>
                 <a href="#"><img src="Icons/tiktok.svg" alt="tiktok" height="25"></a>
-                <a href=""><img src="Icons/instagram-svgrepo-com.svg" alt="instagram" height="25"></a>
+                <a href="#"><img src="Icons/instagram-svgrepo-com.svg" alt="instagram" height="25"></a>
             </div>
         </div>
 

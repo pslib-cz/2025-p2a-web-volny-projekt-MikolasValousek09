@@ -114,6 +114,15 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 
+@media (min-width: 768px) {
+    .text-xs { font-size: 12px; }
+    .text-s  { font-size: 14px; }
+    .text-m  { font-size: 16px; }
+    .text-l  { font-size: 20px; }
+    .text-xl { font-size: 32px; }
+}
+
+
 
 
 

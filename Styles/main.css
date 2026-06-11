@@ -1,5 +1,76 @@
 /* Mobile */
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-menu {
+    position: relative;
+    z-index: 20;
+}
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    width: 44px;
+    height: 34px;
+    cursor: pointer;
+}
+
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--brown);
+    border-radius: 2px;
+}
+
+
+.nav-list {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0.75em 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 220px;
+    background-color: var(--cream);
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.nav-list li {
+    padding: 0.75em 1.25em;
+}
+
+
+.nav-list a {
+    text-decoration: none;
+}
+
+
+.nav-toggle:checked ~ .nav-list {
+    display: block;
+}
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -109,6 +180,7 @@ body {
 .cake-card-left {
     display: flex;
     gap: 1em;
+    text-decoration: none;
 }
 
 
@@ -266,10 +338,10 @@ body {
 }
 
 
-.swiper-button-prev {}
-
-
-.swiper-button-next {}
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--grey-font);
+}
 
 
 
@@ -299,9 +371,12 @@ body {
 
 
 .product-img {
-    border-radius: 5px;
-    aspect-ratio: 1;
+    width: 100%;
     height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
 }
 
 
@@ -325,12 +400,17 @@ body {
     width: 100%;
     background-color: var(--cream);
     border-radius: 5px;
-
+    overflow: hidden;
 }
 
 
 .product-card-a {
     text-decoration: none;
+    display: block;
+}
+
+.product-image {
+    width: 100%;
 }
 
 
@@ -425,6 +505,9 @@ body {
 
 
 .add-btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
     margin: 24px !important;
     padding: 1em;
     background-color: var(--ping);
@@ -436,6 +519,8 @@ body {
 .cart {
     padding-left: 16px;
     padding-right: 16px;
+    max-width: 600px;
+    margin-bottom: 24px;
 }
 
 
@@ -469,13 +554,247 @@ body {
 
 
 .cart-product-add-btn {
-
-
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
 }
 
 
-.shiping-info {
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid var(--ping);
+    border-radius: 5px;
+    padding: 4px 12px;
+}
+
+
+.quantity-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--ping);
+    line-height: 1;
+    padding: 0;
+}
+
+
+.shipping-info {
     display: flex;
     flex-direction: column;
-    
+    gap: 4px;
+    padding: 16px 0;
+    border-top: 1px solid var(--light-ping);
+    border-bottom: 1px solid var(--light-ping);
+    margin-bottom: 16px;
 }
+
+
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid var(--light-ping);
+    margin-bottom: 24px;
+}
+
+
+.checkout-btn {
+    width: 100%;
+    padding: 1em;
+    background-color: var(--ping);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+
+
+
+/* Desktop */
+
+@media (min-width: 768px) {
+
+
+    body {
+        margin: 0 auto;
+    }
+
+
+
+    .header-top {
+        padding: 1.25em 3em;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        gap: 2.5em;
+        min-width: 0;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .nav-list li {
+        padding: 0;
+    }
+
+
+
+    .homepage {
+        height: auto;
+        min-height: 420px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-bottom: 60px;
+    }
+
+    .homepage-text {
+        height: auto;
+        gap: 1.25em;
+        max-width: 480px;
+    }
+
+    .btn-explore {
+        display: inline-block;
+        align-self: flex-start;
+        width: auto;
+        padding: 0.55em 1.1em;
+    }
+
+    .homepage-pic {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: contain;
+        justify-self: center;
+        align-self: center;
+    }
+
+
+    .banner-info {
+        margin-left: 3em;
+        margin-right: 3em;
+        gap: 2em;
+        margin-bottom: 60px;
+    }
+
+    .banner-pic {
+        width: 56px;
+    }
+
+
+
+    .cake-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5em;
+        padding: 3em;
+        margin-bottom: 60px;
+    }
+
+    .cake-cards-h {
+        grid-column: 1 / -1;
+    }
+
+    .cake-cards > .text-a {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .cake-card {
+        flex-direction: column;
+        gap: 0.75em;
+        margin-bottom: 0;
+    }
+
+    .cake-card-left {
+        flex-direction: column;
+        gap: 0.75em;
+    }
+
+    .cake-card .cake-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+    .cake-card-btn {
+        align-self: flex-end;
+    }
+
+
+
+    .swiper {
+        width: 360px;
+        height: 360px;
+    }
+
+
+
+    .login {
+        padding: 3em;
+    }
+
+    .form {
+        display: flex;
+        gap: 1em;
+    }
+
+    .placehold-email {
+        width: 280px;
+    }
+
+
+
+    .footer {
+        padding: 2.5em 3em;
+        align-items: center;
+    }
+
+
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2.5em;
+        padding: 3em;
+    }
+
+
+
+    .cart {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1em;
+    }
+
+}
+
+
