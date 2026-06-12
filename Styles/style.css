@@ -114,7 +114,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 
-/* Desktop – větší typografie podle návrhu */
 @media (min-width: 768px) {
     .text-xs { font-size: 12px; }
     .text-s  { font-size: 14px; }
